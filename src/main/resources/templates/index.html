@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocab</title>
+<!--    <link rel="stylesheet" th:href="@{/css/app.css}"/>-->
+</head>
+<body>
+    <h1>Hello world</h1>
+    <div th:each="user : ${users}">
+        <h2 th:text="${user.userName}"></h2>
+
+    </div>
+    <form method="post" th:action="@{/}">
+        <input type="text" name="newUserName">
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

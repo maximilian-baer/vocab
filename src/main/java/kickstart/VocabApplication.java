@@ -9,9 +9,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.List;
-import java.util.Random;
-import java.util.UUID;
-import java.util.random.RandomGenerator;
 
 @SpringBootApplication()
 public class VocabApplication implements CommandLineRunner {
@@ -25,7 +22,7 @@ public class VocabApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        createUser();
+//        createUser();
     }
 
     private void updateUser(Long userId) {
